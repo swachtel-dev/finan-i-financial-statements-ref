@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Statements Quick Reference - FINAN I Unit 3</title>
+    <style>
+        @media print {
+            body { max-width: 100%; margin: 0.4in 0.5in; }
+            .section { page-break-inside: avoid; }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f9f7f4;
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 40px 40px 50px 40px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #005fcc;
+            color: #fff;
+            padding: 8px 16px;
+            z-index: 100;
+            text-decoration: underline;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        :focus-visible {
+            outline: 2px solid #005fcc;
+            outline-offset: 2px;
+        }
+
+        header {
+            margin-bottom: 35px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #6b7280;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1em;
+            color: #57534e;
+        }
+
+        h2 {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-top: 35px;
+            margin-bottom: 14px;
+            padding-bottom: 6px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        h2.income { color: #8C1D40; border-bottom-color: #8C1D40; }
+        h2.balance { color: #0066b2; border-bottom-color: #0066b2; }
+        h2.cashflow { color: #16a34a; border-bottom-color: #16a34a; }
+        h2.tips { color: #57534e; }
+
+        p { margin-bottom: 12px; font-size: 0.98em; }
+
+        a {
+            text-decoration: underline;
+        }
+
+        .flow {
+            background: #fff;
+            padding: 18px 22px;
+            border-radius: 5px;
+            margin: 14px 0;
+            font-size: 0.95em;
+            border-left: 3px solid #d1d5db;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .flow .line {
+            padding: 4px 0;
+        }
+
+        .flow .line.indent { padding-left: 20px; color: #57534e; }
+        .flow .line.bold { font-weight: 600; }
+        .flow .arrow { color: #57534e; }
+
+        .formula {
+            background: #f3f4f6;
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-family: 'SF Mono', 'Menlo', monospace;
+            font-size: 0.92em;
+            margin: 12px 0;
+            display: inline-block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 14px 0;
+            font-size: 0.92em;
+        }
+
+        th {
+            background: #f3f4f6;
+            text-align: left;
+            padding: 8px 12px;
+            font-weight: 600;
+            border-bottom: 2px solid #d1d5db;
+        }
+
+        td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .note {
+            background: #fff7ed;
+            border: 1px solid #fed7aa;
+            padding: 14px 18px;
+            border-radius: 5px;
+            margin: 14px 0;
+            font-size: 0.95em;
+            color: #7c2d12;
+        }
+    </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<header>
+    <h1>Financial Statements Quick Reference</h1>
+    <p class="subtitle">Keep this open during the scavenger hunt quiz. You don't need to memorize anything here.</p>
+</header>
+
+<main id="main-content">
+
+<section aria-label="The Income Statement">
+<h2 class="income">The Income Statement</h2>
+<p><em>Covers a time period (e.g., "Year ended December 31, 2025")</em></p>
+<p>Shows how much a company made or lost. Flows from top to bottom:</p>
+
+<div class="flow" role="img" aria-label="Income statement flow: Revenue (total money coming in, the top line), minus Cost of Goods Sold, minus Operating Expenses, minus Interest and Taxes, equals Net Income (what the company keeps, the bottom line)">
+    <div aria-hidden="true">
+        <div class="line bold">Revenue <span class="arrow">&larr;</span> total money coming in ("top line")</div>
+        <div class="line indent"><em>minus</em> Cost of Goods Sold</div>
+        <div class="line indent"><em>minus</em> Operating Expenses</div>
+        <div class="line indent"><em>minus</em> Interest and Taxes</div>
+        <div class="line bold">= Net Income <span class="arrow">&larr;</span> what the company keeps ("bottom line")</div>
+    </div>
+</div>
+
+<p><strong>Key ratio:</strong></p>
+<div class="formula">Net Margin = (Net Income &divide; Revenue) &times; 100%</div>
+<p>Tells you how many cents the company keeps per dollar of revenue. Restaurants: 5-15%. Tech: 20-30%+.</p>
+</section>
+
+<section aria-label="The Balance Sheet">
+<h2 class="balance">The Balance Sheet</h2>
+<p><em>Shows a single moment (e.g., "As of December 31, 2025")</em></p>
+<p>Shows what a company owns and owes. Always balances:</p>
+
+<div class="formula">Assets = Liabilities + Stockholders' Equity</div>
+
+<p><strong>Assets</strong> = what the company owns (cash, equipment, buildings)<br>
+<strong>Liabilities</strong> = what the company owes (debt, bills)<br>
+<strong>Equity</strong> = the difference (what belongs to owners)</p>
+</section>
+
+<section aria-label="The Statement of Cash Flows">
+<h2 class="cashflow">The Statement of Cash Flows</h2>
+<p><em>Covers a time period, like the income statement</em></p>
+<p>Tracks actual cash moving in and out, organized by <em>why</em>:</p>
+
+<p><strong>Operating Activities:</strong> cash from running the business (usually positive)<br>
+<strong>Investing Activities:</strong> cash spent on equipment, buildings (usually negative)<br>
+<strong>Financing Activities:</strong> cash from borrowing or selling stock</p>
+
+<p>A company can be "profitable" on the income statement but running out of cash. This statement catches that. You'll study a real example of this in Unit 6.</p>
+</section>
+
+<section aria-label="Reading Large Numbers">
+<h2 class="tips">Reading Large Numbers</h2>
+
+<p>Check the top of each statement for the units note. Then:</p>
+
+<table>
+    <caption>How to convert numbers using the units note on financial statements</caption>
+    <tr><th scope="col">Statement shows</th><th scope="col">Units note</th><th scope="col">Actual amount</th></tr>
+    <tr><td>11,925,601</td><td>"in thousands"</td><td>$11.9 billion</td></tr>
+    <tr><td>416,161</td><td>"in millions"</td><td>$416 billion</td></tr>
+    <tr><td>1,153,881</td><td>"in millions"</td><td>$1.15 trillion</td></tr>
+</table>
+
+<div class="note"><strong>Parentheses mean negative.</strong> A number shown as (5,432) means negative $5,432. Standard accounting notation.</div>
+</section>
+
+<section aria-label="Calculating Growth">
+<h2 class="tips">Calculating Growth</h2>
+
+<div class="formula">Growth Rate = ((New Value - Old Value) &divide; Old Value) &times; 100%</div>
+<p>Example: Revenue went from $9.9B to $11.9B.<br>
+Growth = ($11.9B - $9.9B) &divide; $9.9B &times; 100% = about 20% growth.</p>
+</section>
+
+</main>
+
+</body>
+</html>
